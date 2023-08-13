@@ -1,0 +1,86 @@
+.carousel-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+    margin-bottom: 100px;
+  }
+  .carousel-heading {
+    font-size: 2em; /* Adjust as needed */
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px; /* Space between the heading and the carousel */
+    color: #fff; /* Adjust color as needed */
+    border-bottom: 3px solid #333; /* Optional: Adds a line below the heading */
+    padding-bottom: 10px; /* Space between the heading text and the line */
+}
+  .carousel-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+  
+  .carousel-item img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .carousel-item p {
+    margin-top: 40px;
+    margin-bottom: 60px;
+    font-size: 30px; /* Increase the font size */
+    font-weight: bold; /* Add bold font weight */
+    text-align: center; /* Center-align the project title */
+    color: #fff; /* Adjust the text color as needed */
+  }
+  
+  /* Adjust the spacing between project title and dots */
+  .carousel .carousel-status {
+    margin-top: 150px; /* Increase or decrease as needed */
+  }
+  
+  /* Style for the dots */
+  .carousel .carousel-status ul {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .carousel .carousel-status li {
+    margin: 0 5px; /* Adjust the margin as needed */
+  }
+  
+  .carousel .carousel-status li button {
+    width: 8px; /* Adjust the size of the dots as needed */
+    height: 8px;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.5); /* Adjust the color and opacity as needed */
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 0;
+  }
+  
+  /* Customize the carousel arrow styling */
+  .carousel .carousel-arrow {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  .carousel .carousel-arrow.carousel-arrow-left {
+    left: -30px; /* Adjust the distance from the left side */
+  }
+  
+  .carousel .carousel-arrow.carousel-arrow-right {
+    right: -30px; /* Adjust the distance from the right side */
+  }
+  

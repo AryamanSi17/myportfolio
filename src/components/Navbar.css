@@ -1,0 +1,44 @@
+.navbar {
+    display: flex;
+    justify-content: flex-end; /* Aligns the navbar content to the right */
+    padding: 1rem 2rem;
+    background: transparent;
+    font-family: 'Poppins', sans-serif;
+    height: 40px;
+  }
+  .navbar-logo {
+    width: 100px;
+    height: 40px; /* Adjust as needed */
+    margin-right: auto; /* Pushes the rest of the content to the right */
+    cursor: pointer; 
+    filter: invert(1);
+    color: #ffffff;/* Indicates it's clickable, if you want to link it somewhere */
+}
+.navbar-content {
+  display: flex;
+  justify-content: space-between; /* This will push the logo to the left and links to the right */
+  align-items: center; /* Vertically centers the items */
+  width: 100%; /* Ensures the content spans the full width of the navbar */
+}
+
+  
+  .navbar-content a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+    padding: 0.5rem 1rem; /* Padding for a larger clickable area and visual spacing */
+  }
+  
+  /* Responsive design: Stacking links vertically on smaller screens */
+  @media (max-width: 768px) {
+    .navbar {
+      justify-content: center; /* Center the links on smaller screens */
+    }
+  
+    .navbar-content {
+      flex-direction: column; /* Stack links vertically */
+      align-items: center; /* Center-align the links */
+      gap: 1rem; /* Adjust the gap for vertical spacing */
+    }
+  }
+  
