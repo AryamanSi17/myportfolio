@@ -16,16 +16,7 @@ function ProfileCard() {
                     </p>
                 </div>
                 <div className="image-container">
-                    <svg className="rotating-ring" viewBox="0 0 220 220">
-                        <defs>
-                            <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                                <stop offset="0%" style={{ stopColor: "purple", stopOpacity: 1 }} />
-                                <stop offset="50%" style={{ stopColor: "darkblue", stopOpacity: 1 }} />
-                                <stop offset="100%" style={{ stopColor: "purple", stopOpacity: 1 }} />
-                            </linearGradient>
-                        </defs>
-                        <circle cx="110" cy="110" r="105" fill="none" stroke="url(#gradient)" strokeWidth="10" />
-                    </svg>
+                    
                     <img src={profileImage} alt="Your Alt Text" />
                 </div>
             </div>

@@ -26,15 +26,34 @@
     padding: 2rem;
     flex-direction: column;
  }
-  .about_heading{
-    font-size: 3.5rem;
+
+ .about_heading {
+  font-size: 3.5rem;
+  background-image: linear-gradient(90deg, #89CFF0, #D8BFD8, #89CFF0); /* Light blue to light purple */
+  background-size: 200% 100%; /* Set the size to be double the width */
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: GradientAnimation 5s linear infinite;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+@keyframes GradientAnimation {
+  0% {
+    background-position: -100% 50%;
   }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
   .about_data {
     font-size: 1.2em; /* Slightly larger font size for emphasis */
     line-height: 1.6; /* Improved readability */
     color: #333; /* Dark gray color for the text */
-    margin: 20px 0; /* Some spacing above and below the paragraph */
-    padding: 20px; /* Padding around the text */
+    margin: 10px 0; /* Some spacing above and below the paragraph */
+    padding: 1px; /* Padding around the text */
     background-color: transparent; /* Light gray background for contrast */
     border-radius: 10px; /* Rounded corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
