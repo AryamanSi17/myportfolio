@@ -1,44 +1,79 @@
 .navbar {
-    display: flex;
-    justify-content: flex-end; /* Aligns the navbar content to the right */
-    padding: 1rem 2rem;
-    background: transparent;
-    font-family: 'Poppins', sans-serif;
-    height: 40px;
-  }
-  .navbar-logo {
-    width: 100px;
-    height: 40px; /* Adjust as needed */
-    margin-right: auto; /* Pushes the rest of the content to the right */
-    cursor: pointer; 
-    filter: invert(1);
-    color: #ffffff;/* Indicates it's clickable, if you want to link it somewhere */
-}
-.navbar-content {
   display: flex;
-  justify-content: space-between; /* This will push the logo to the left and links to the right */
-  align-items: center; /* Vertically centers the items */
-  width: 100%; /* Ensures the content spans the full width of the navbar */
+  justify-content: flex-end;
+  padding: 1rem 2rem;
+  background: transparent;
+  font-family: 'Poppins', sans-serif;
+  height: 50px;
 }
 
-  
-  .navbar-content a {
-    text-decoration: none;
-    color: #ffffff;
-    font-weight: 500;
-    padding: 0.5rem 1rem; /* Padding for a larger clickable area and visual spacing */
+.navbar-logo {
+  width: 170px;
+  height: 47px;
+  margin-right: auto;
+  cursor: pointer;
+  filter: invert(1);
+  color: #ffffff;
+}
+
+.navbar-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 500;
+  padding: 0.25rem 0.5rem; /* Reduced padding for a more compact look */
+  transition: background 0.3s;
+  border-radius: 8px; /* Rounded corners for the hover effect */
+}
+
+.menu-toggle {
+  display: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: #ffffff;
+  margin-left: 1rem; /* Added some margin for spacing */
+}
+
+@media (max-width: 768px) {
+  .navbar {
+      justify-content: center;
   }
-  
-  /* Responsive design: Stacking links vertically on smaller screens */
-  @media (max-width: 768px) {
-    .navbar {
-      justify-content: center; /* Center the links on smaller screens */
-    }
-  
-    .navbar-content {
-      flex-direction: column; /* Stack links vertically */
-      align-items: center; /* Center-align the links */
-      gap: 1rem; /* Adjust the gap for vertical spacing */
-    }
+
+  .navbar-content {
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem; /* Reduced gap for a more compact look on mobile */
   }
-  
+
+  .menu-toggle {
+      display: block;
+  }
+
+  .nav-links {
+      display: none;
+      flex-direction: column;
+      gap: 0.5rem; /* Reduced gap for a more compact look on mobile */
+      width: 100%; /* Full width on mobile for easier touch */
+      text-align: center; /* Center the text on mobile */
+  }
+
+  .nav-links.active {
+      display: flex;
+  }
+
+  .nav-links a {
+      width: 100%; /* Full width for easier touch on mobile */
+      padding: 0.5rem; /* Increased padding for a better touch experience */
+  }
+}
