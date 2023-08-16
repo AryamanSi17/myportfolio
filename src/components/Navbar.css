@@ -5,6 +5,7 @@
   background: transparent;
   font-family: 'Poppins', sans-serif;
   height: 50px;
+  position: relative;
 }
 
 .navbar-logo {
@@ -37,12 +38,17 @@
   border-radius: 8px; /* Rounded corners for the hover effect */
 }
 
+
 .menu-toggle {
   display: none;
   cursor: pointer;
   font-size: 1.5rem;
   color: #ffffff;
-  margin-left: 1rem; /* Added some margin for spacing */
+  position: absolute; /* Absolute positioning */
+  top: 10px; /* Adjust as needed */
+  right: 10px; /* Adjust as needed */
+  background-color: rgba(0, 0, 0, 0.7); /* Black background with 70% opacity */
+  z-index: 1000; 
 }
 
 @media (max-width: 768px) {

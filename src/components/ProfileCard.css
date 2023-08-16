@@ -250,3 +250,48 @@
     border-radius: 50%;
     opacity: 0.8;
   }
+ /* Mobile styles (default) */
+.profile-card {
+  flex-direction: column; /* Stack the description and image vertically on mobile */
+  width: 100%; /* Ensure it takes up full width */
+  box-sizing: border-box; /* Ensure padding doesn't push it outside its container */
+  padding: 1rem; /* Add some padding for mobile */
+}
+
+.description {
+  width: 100%; /* Ensure both take full width on mobile */
+  margin: 0; /* Remove any margins */
+  padding: 0; /* Remove any padding */
+}
+
+.links-container {
+  flex-direction: column; /* Stack the links vertically on mobile */
+  gap: 1rem; /* Adjust the gap for mobile */
+  width: 100%; /* Ensure it takes up full width */
+}
+
+/* Tablet and above */
+@media (min-width: 768px) {
+  .profile-card {
+      flex-direction: row; /* On tablets and larger, place the description and image side by side */
+      padding: 2rem; /* Restore original padding for larger screens */
+  }
+
+  .links-container {
+      flex-direction: row; /* On tablets and larger, place the links side by side */
+      gap: 7.5rem; /* Restore the original gap */
+  }
+}
+
+/* Desktop and above */
+@media (min-width: 1024px) {
+  .description {
+      flex: 0.5;
+      padding-right: 2rem;
+  }
+
+  .image-container {
+      width: 200px; /* You can adjust this value */
+      height: 200px; /* You can adjust this value */
+  }
+}
