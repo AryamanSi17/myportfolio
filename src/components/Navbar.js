@@ -29,7 +29,11 @@ function Navbar() {
               Projects
             </Link>
           </a>
-          <a href="#contact">Contact</a>
+          <a href='#contact'>
+          <Link to="contact" smooth={true} duration={1000}>
+             Contact
+          </Link>
+          </a>
           <a href="/path-to-your-resume.pdf" download="your-resume.pdf">
             Resume <FaDownload />
           </a>
