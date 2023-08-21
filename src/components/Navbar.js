@@ -34,7 +34,7 @@ function Navbar() {
              Contact
           </Link>
           </a>
-          <a href="/path-to-your-resume.pdf" download="your-resume.pdf">
+          <a href="https://drive.google.com/file/d/19r0FT6C_YfKfGzLFG6u4_bWWtMtf0Ud4/view?usp=sharing" download="Aryaman_Sinha_Resume.pdf">
             Resume <FaDownload />
           </a>
         </div>
