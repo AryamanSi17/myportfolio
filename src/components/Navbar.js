@@ -34,7 +34,7 @@ function Navbar() {
              Contact
           </Link>
           </a>
-          <a href="https://drive.google.com/file/d/19r0FT6C_YfKfGzLFG6u4_bWWtMtf0Ud4/view?usp=sharing" download="Aryaman_Sinha_Resume.pdf">
+          <a href="https://drive.google.com/file/d/19r0FT6C_YfKfGzLFG6u4_bWWtMtf0Ud4/view?usp=sharing" download="Aryaman_Sinha_Resume.pdf" target="_blank">
             Resume <FaDownload />
           </a>
         </div>
