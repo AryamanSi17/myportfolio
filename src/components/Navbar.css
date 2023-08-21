@@ -83,3 +83,56 @@
       padding: 0.5rem; /* Increased padding for a better touch experience */
   }
 }
+/* Add the following styles at the end of your existing CSS */
+.menu-backdrop {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+  backdrop-filter: blur(5px); /* Apply the blur effect */
+  z-index: 999; /* Ensure the backdrop is above the content */
+}
+
+@media (max-width: 768px) {
+  /* ... Other existing media queries ... */
+
+  .menu-toggle {
+    display: block;
+    z-index: 1000;
+  }
+
+  .menu-backdrop.active {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background for mobile menu */
+    backdrop-filter: blur(5px); /* Apply the blur effect */
+    z-index: 1001; /* Ensure the menu is above the backdrop */
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    padding-top: 5rem; /* Adjust as needed to push content down */
+  }
+}
+/* Add the following styles to the existing CSS */
+.nav-links button {
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-weight: 500;
+  padding: 0.25rem 0.5rem;
+  cursor: pointer;
+  width: 100%; /* Full width for easier touch on mobile */
+}
+
+/* ... Other existing styles ... */

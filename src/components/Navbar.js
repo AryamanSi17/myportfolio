@@ -20,6 +20,7 @@ function Navbar() {
         <div className="menu-toggle" onClick={toggleMenu}>
           {menuActive ? <FaTimes /> : <FaBars />}
         </div>
+        <div className={`menu-backdrop ${menuActive ? 'active' : ''}`} onClick={toggleMenu}></div>
 
         <div className={`nav-links ${menuActive ? 'active' : ''}`}>
           <a href="#home">Home</a>
